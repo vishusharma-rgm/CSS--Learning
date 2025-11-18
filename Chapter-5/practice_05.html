@@ -1,0 +1,79 @@
+<!-- Crate a lyout of your choice using float
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        header {
+            background-color: lightgray;
+            height: 60px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> home</li>
+                <li> about</li>
+                <li> services</li>
+                <li> contact</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html> -->
+
+crate a same lauout using flex.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex-wrap: left;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            flex-wrap: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; background-color: lightgray; height: 60px; align-items: center; margin: 0; padding: 0; list-style-type: none;">
+                <li style="padding: 20px; font-size: 18px;"> home</li>
+                <li style="padding: 20px; font-size: 18px;"> about</li>
+                <li style="padding: 20px; font-size: 18px;"> services</li>
+                <li style="padding: 20px; font-size: 18px;"> contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+</body>
+</html>
+
+
