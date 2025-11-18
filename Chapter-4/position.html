@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+   
+    <!-- Static: The default position. tob/bottom /left right /z-index has no effect.
+
+    Relative: The tob /bottom /left right z-indx will now work. other wise the clement is in the flow of docume nt like static.
+
+    Absolute: The Ekment is removed from the flow & is reativeLY positioned to its finit non-static ancestor. top/bottom etc work 
+
+    fixed: Just like absolute except the element is positioned relative to the browser window
+
+    Sticky: The Element is positioned based on user's Scroll position -->
+    
+    <style>
+         /* *{
+            margin: 0;
+            padding: 0;
+          */
+        
+        li{
+            /* display: inline; */
+            list-style: circle;
+            list-style: url('pexels-padrinan-255379.jpg');
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+
+        }
+        p{
+            text-align: center;
+
+        }
+        .container{
+        background-color: lightblue;
+        height: 200px;
+        width: 400px;
+        position: relative;
+        margin: auto;
+        }
+     /* }  */
+
+        
+
+    </style>
+
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Addres</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+     </header>
+     <div class="container">
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia adipisci debitis sunt eveniet quaerat repellendus, rerum mollitia! Nemo quis incidunt itaque inventore voluptatem dolor nisi delectus! At voluptates architecto tempore tempora accusantium vitae perferendis.</p>
+     </div>
+</body>
+</html>
